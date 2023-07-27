@@ -39,10 +39,10 @@ probability = np.empty([popSize])
 qpv = np.empty([popSize, genomeLength, top_bottom])         
 nqpv = np.empty([popSize, genomeLength, top_bottom])
 # chromosome: classical chromosome
-chromosome = np.empty([popSize, genomeLength],dtype=np.int) 
+chromosome = np.empty([popSize, genomeLength], dtype=np.int64)
 child1 = np.empty([popSize, genomeLength, top_bottom])
 child2 = np.empty([popSize, genomeLength, top_bottom])
-best_chrom = np.empty([generation_max])
+best_chrom = np.empty([generation_max], dtype=np.int64)
 
 # Initialization global variables
 theta=0;

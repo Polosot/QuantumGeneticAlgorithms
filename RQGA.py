@@ -27,7 +27,7 @@ cutoff=99;
 # |psi> REGISTER IN SUPERPOSITION                       #  
 #########################################################
 def bin2dec(string_num):
-    return str(int(string_num, 2))
+    return int(string_num, 2)
 
 def dec2vec(dec,n):
     vec=np.zeros((2**n,1))
